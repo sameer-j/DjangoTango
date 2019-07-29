@@ -1,5 +1,5 @@
 Django:
-    ☐ use same project for polls app
+    ✔ use same project for polls app @done(19-07-29 17:13)
     ☐ use postgres db
     ☐ angular ui
     ☐ pages to category many to many
