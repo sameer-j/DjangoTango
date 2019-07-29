@@ -1,11 +1,11 @@
 
-tango_with_django_project/rango/__pycache__/views.cpython-37.pyc
-tango_with_django_project/rango/__pycache__/urls.cpython-37.pyc
+one_django_project/rango/__pycache__/views.cpython-37.pyc
+one_django_project/rango/__pycache__/urls.cpython-37.pyc
 *.pyc
 *.pyc
 *.pyc
 *.pyc
-tango_with_django_project/rango/__pycache__/urls.cpython-37.pyc
-tango_with_django_project/rango/__pycache__/views.cpython-37.pyc
-tango_with_django_project/tango_with_django_project/__pycache__/urls.cpython-37.pyc
-tango_with_django_project/tango_with_django_project/__pycache__/urls.cpython-37.pyc
+one_django_project/rango/__pycache__/urls.cpython-37.pyc
+one_django_project/rango/__pycache__/views.cpython-37.pyc
+one_django_project/one_django_project/__pycache__/urls.cpython-37.pyc
+one_django_project/one_django_project/__pycache__/urls.cpython-37.pyc

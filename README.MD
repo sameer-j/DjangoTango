@@ -1,4 +1,7 @@
-# Tango With Django 2
+# One Django
 One Django project with apps from different tutorials
 * rango
 * polls
+
+python version : 3.7.2
+django version: 2.2.3
