@@ -1,4 +1,0 @@
-- postgres db
-- angular ui
-- pages to category many to many
-- angular tour of heroes using django

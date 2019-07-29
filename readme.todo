@@ -1,0 +1,6 @@
+Django:
+    ☐ use same project for polls app
+    ☐ use postgres db
+    ☐ angular ui
+    ☐ pages to category many to many
+    ☐ angular tour of heroes using django
