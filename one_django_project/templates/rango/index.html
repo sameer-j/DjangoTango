@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Rango</title>
+    </head>
+    <body>
+        <h1>Rango says</h1>
+        <div>
+            hey there partner! <br/>
+            <strong>{{ boldmessage }}</strong><br/>
+        </div>
+        <div style="float: right">
+                <a href="/rango/about">About</a>
+                <a href="/">Django Home</a><br/>
+        </div>
+        <div>
+            <div>
+                <label for="">Static Image of Rango</label>
+                <img src="{% static "images/rango.jpeg" %}" alt="Picture of Rango">
+            </div>
+            <div>
+                <label for="">Media Image of Cat</label>
+                <img src="{{ MEDIA_URL }}images/cat.jpeg" alt="Picture of Cat">
+            </div>
+        </div>
+    </body>
+</html>

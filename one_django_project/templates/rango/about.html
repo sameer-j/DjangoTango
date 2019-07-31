@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Rango Says...</h1>
+    <p>Here is the about page..</p>
+    <div style="float: right">
+            <a href="/rango">Rango Home</a>
+            <a href="/">Django Home</a><br/>
+    </div>
+    <div>
+            <label for="">Static Image of Rango</label>
+            <img src="{% static "images/rango.jpeg" %}" alt="Picture of Rango">
+        </div>
+        <p>This tutorial has been put together by {{ authorname }}</p>
+        <div>
+            <label for="">Media Image of Cat</label>
+            <img src="{{ MEDIA_URL }}images/cat.jpeg" alt="Picture of Cat">
+        </div>
+</body>
+</html>
