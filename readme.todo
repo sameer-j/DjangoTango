@@ -4,3 +4,16 @@ Django:
     ☐ angular ui
     ☐ pages to category many to many
     ☐ angular tour of heroes using django
+    ☐ use mongo
+    ☐ finish official tutorial
+
+Questions:
+    ☐ can the underlying db be changed independent of the models?
+        ☐ use admin interface for different db
+    
+
+Later Read:
+    ☐ https://www.sqlite.org/whentouse.html
+
+
+    
