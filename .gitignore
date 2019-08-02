@@ -9,3 +9,5 @@ one_django_project/rango/__pycache__/urls.cpython-37.pyc
 one_django_project/rango/__pycache__/views.cpython-37.pyc
 one_django_project/one_django_project/__pycache__/urls.cpython-37.pyc
 one_django_project/one_django_project/__pycache__/urls.cpython-37.pyc
+one_django_project/db.sqlite3
+one_django_project/bakdb.sqlite3
