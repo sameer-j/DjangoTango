@@ -1,11 +1,18 @@
+'''
+Script to populate demo db data
+'''
 import os
+import django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'one_django_project.settings')
 
-import django
+
 django.setup()
 from rango.models import Category, Page
 
 def populate():
+    '''
+    populate function
+    '''
     # First, we will create lists of dictionaries containing the pages
     # we want to add into each category.
     # Then we will create a dictionary of dictionaries for our categories. 
@@ -46,31 +53,34 @@ def populate():
         {'title':'Bottle',
          'url':'http://bottlepy.org/docs/dev/'},
         {'title':'Flask',
-         'url':'http://flask.pocoo.org'} ]
-    
-    cats = {'Python': {'pages': python_pages},
-            'Django': {'pages': django_pages},
-            'Other Frameworks': {'pages': other_pages} }
-    
-    for cat, cat_data in cats.items():
-        c = add_cat(cat)
-        for p in cat_data['pages']:
-            add_page(c, p['title'], p['url'])
+         'url':'http://flask.pocoo.org'}]
+    cats = [
+        {'name': 'Python', 'pages': python_pages, 'views': 128, 'likes': 64},
+        {'name': 'Django', 'pages': django_pages, 'views': 64, 'likes': 32},
+        {'name': 'Other Frameworks', 'pages': other_pages, 'views': 32, 'likes': 16}
+    ]
+    for cat in cats:
+        c = add_cat(cat['name'], cat['views'], cat['likes'])
+        for p in cat['pages']:
+            add_page(c, p['title'], p['url'])            
 
     for c in Category.objects.all():
         for p in Page.objects.filter(category=c):
             print(f'- {str(c)} - {str(p)}')
 
 def add_page(cat, title, url, views=0):
+    '''
+    Adds page to rango_pages table
+    '''
     p = Page.objects.get_or_create(category=cat, title=title, url=url, views=views)[0]
-    # p = Page.objects.get_or_create(category=cat, title=title)[0]
-    # p.url = url
-    # p.views = views
     p.save()
     return p
 
-def add_cat(name):
-    c = Category.objects.get_or_create(name=name)[0]
+def add_cat(name, views, likes):
+    '''
+    Adds category to rango_category table
+    '''
+    c = Category.objects.get_or_create(name=name, views=views, likes=likes)[0]
     c.save()
     return c
 
