@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polls</title>
+</head>
+<body>
+    <h1>Polls</h1>
+    <div style="float: right">
+        <a href="/">Django Home</a>
+    </div>
+    <div>
+        <h2>Top 5 polls questions:</h2>
+        {% if latest_questions_list %}
+            <ul>
+                
+                {% for question in latest_questions_list %}
+                    <!-- <li>
+                        <a href="/polls/{{ question.id }}">{{ question.question_text }}</a>
+                    </li> -->
+                    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+                {% endfor %}
+                    
+            </ul>
+        {% else %}
+        <strong>No polls are available</strong>
+        {% endif %}
+            
+    </div>
+</body>
+</html>
