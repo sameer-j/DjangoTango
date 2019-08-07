@@ -6,15 +6,28 @@ Django:
     ☐ angular tour of heroes using django
     ☐ use mongo
     ☐ finish official tutorial
+        ✔ pt1 @done(19-08-05 11:47)
+        ✔ pt2 @done(19-08-05 10:47)
+        ☐ pt3
+        ☐ pt4
+        ☐ pt5
+        ☐ pt6
+        ✔ pt7 @done(19-08-05 10:47)
+    ☐ rest apis using django
 
 Questions:
     ☐ can the underlying db be changed independent of the models?
         ☐ use admin interface for different db
+    ☐ y use slugify when its just find and replace?
+    ☐ url with and without trailing slash
     
 
 Later Read:
     ☐ https://www.sqlite.org/whentouse.html
     ☐ https://docs.djangoproject.com/en/2.1/misc/design-philosophies/
+    ☐ http://cheatography.com/davechild/cheat-sheets/regular-expressions/
+    ☐ http://steelkiwi.com/blog/best-practices-working-django-models-python/. In this post,you will find a series of tips and tricks when working with models.
+    ☐ https://medium.com/@raiderrobert/make-your-django-models-dryer-4b8d0f3453dd#.ozrdt3rsm by Robert Roskam. In this post, you can see how you can use the property method of a class to reduce the amount of code needed when accessing related models.
 
 
     
