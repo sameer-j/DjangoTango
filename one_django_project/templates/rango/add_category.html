@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rango</title>
+</head>
+<body>
+    <h1>Rango says</h1>
+    <div style="float: right">
+            <a href="/rango">Rango Home</a>
+            <a href="/">Django Home</a><br/>
+    </div>
+    <h2>Add a Category</h2>
+    <div>
+        <form id="category_form" action="/rango/add_category/" method="post">
+        {% csrf_token %}
+        {% for field in form.hidden_fields %}
+          {{ field }}
+        {% endfor %}
+        {% for field in form.visible_fields %}
+          {{ field.errors }}
+          {{ field.help_text }}
+          {{ field }}
+        {% endfor %}
+        <input type="submit" value="Create Category">
+        </form>
+    </div>
+</body>
+</html>

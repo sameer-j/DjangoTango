@@ -1,5 +1,6 @@
 Django:
     ✔ use same project for polls app @done(19-07-29 17:13)
+    ☐ show all categories and pages
     ☐ use postgres db
     ☐ angular ui
     ☐ pages to category many to many
@@ -8,21 +9,31 @@ Django:
     ☐ finish official tutorial
         ✔ pt1 @done(19-08-05 11:47)
         ✔ pt2 @done(19-08-05 10:47)
-        ☐ pt3
+        ✔ pt3 @done(19-08-07 17:26)
         ☐ pt4
         ☐ pt5
         ☐ pt6
         ✔ pt7 @done(19-08-05 10:47)
     ☐ rest apis using django
+    ☐ sending different status code in case of error @started(19-08-07 17:27)
+        ✔ 404 @done(19-08-07 17:26)
+        ☐ others?
+    ☐ returning file in response
+    ☐ django template vs angular
 
 Questions:
     ☐ can the underlying db be changed independent of the models?
         ☐ use admin interface for different db
     ☐ y use slugify when its just find and replace?
     ☐ url with and without trailing slash
+    ☐ why hidden fields are used, whats the relation with http statelessness?
+    ☐ server side rendering or dynamic pages?
+    ☐ single page web apps are better?
+    ☐ seo for single page web apps
     
 
 Later Read:
+    ☐ csrf tokens for forms(page 100) : https://docs.djangoproject.com/en/2.1/ref/csrf/
     ☐ https://www.sqlite.org/whentouse.html
     ☐ https://docs.djangoproject.com/en/2.1/misc/design-philosophies/
     ☐ http://cheatography.com/davechild/cheat-sheets/regular-expressions/
