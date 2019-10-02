@@ -1,0 +1,15 @@
+astroid==2.2.5
+certifi==2018.4.16
+isort==4.3.21
+lazy-object-proxy==1.4.1
+mccabe==0.6.1
+pbr==5.4.1
+pipenv==2018.7.1
+pylint==2.3.1
+six==1.12.0
+stevedore==1.30.1
+typed-ast==1.4.0
+virtualenv==16.7.2
+virtualenv-clone==0.3.0
+virtualenvwrapper==4.8.4
+wrapt==1.11.2
