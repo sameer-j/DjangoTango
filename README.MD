@@ -1,4 +1,4 @@
-# One Django
+# DjangoTango
 One Django project with apps from different tutorials
 * rango
 * polls
