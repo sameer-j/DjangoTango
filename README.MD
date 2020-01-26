@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/sameer-j/https://githubcom/sameer-j/DjangoTango.svg)](http://hits.dwyl.io/sameer-j/https://githubcom/sameer-j/DjangoTango)
+
 # DjangoTango
 One Django project with apps from different tutorials
 * rango
